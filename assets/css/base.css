@@ -4,6 +4,8 @@
   --text-color: #333;
   --primary-color: #29539f;
   --border-color: rgb(177, 174, 174);
+  --star-gold: #ffce3e;
+  --color-hot: #d43205;
 
   --header-height: 120px;
   --navnar-height: 43px;
@@ -43,6 +45,12 @@ html {
   padding-left: 12px;
   padding-right: 12px;
   width: 16.6667%;
+}
+
+.grid__column-2-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 20%;
 }
 
 .grid__column-10 {
@@ -169,4 +177,40 @@ html {
 }
 .select-input__link:hover {
   color: #29539f;
+}
+
+/* pagiantion */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.pagination-item {
+  margin: 0 8px;
+}
+.pagination-item__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #939393;
+  min-width: 40px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+}
+.pagination-item__link:hover {
+  filter: brightness(120%);
+}
+.pagination-item__icon {
+  font-size: 1.7rem;
+}
+
+.pagination-item--active .pagination-item__link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.home-product__pagination {
+  margin: 48px 0 32px 0;
 }
